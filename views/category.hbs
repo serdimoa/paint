@@ -1,0 +1,188 @@
+{{>header title="Главная страница"}}
+
+<body>
+	<div class="animsition">
+		<main>
+			<div class="navbar navbar-default default" role="navigation">
+				<div class="navbar-header">
+					<div class="navbar-brand">
+						<a href="index.html"><img src="#" srcset="style/images/logo.png 1x, style/images/logo@2x.png 2x" alt="" /></a>
+					</div>
+					<div class="nav-bars-wrapper">
+						<div class="nav-bars-inner">
+							<div class="nav-bars" data-toggle="collapse" data-target=".navbar-collapse"><span></span></div>
+						</div>
+						<!-- /.nav-bars-inner -->
+					</div>
+					<!-- /.nav-bars-wrapper -->
+					<div class="header-other">
+						<div class="btn-group pull-right text-right"> <a href="#" class="share-button btn btn-light dropdown-toggle" data-toggle="dropdown"><span></span>Share</a>
+							<div class="dropdown-menu">
+								<div class="goodshare-wrapper"> <a href="#" class="goodshare" data-type="fb">Share</a> <a href="#" class="goodshare" data-type="tw">Tweet</a>
+									<a href="#" class="goodshare" data-type="pt">Pin</a> <a href="#" class="goodshare" data-type="tm">Post</a> </div>
+								<!-- /.goodshare-wrapper -->
+							</div>
+							<!-- /.dropdown-menu -->
+						</div>
+						<!-- /.btn-group -->
+					</div>
+					<!-- /.header-other -->
+				</div>
+				<!-- /.navbar-header -->
+				{{> nav menu=menu}}
+				<!--/.nav-wrapper -->
+			</div>
+			<!-- /.navbar -->
+
+			<div class="page-title" style="background-image: url(style/images/art/pagetitle3.jpg);">
+				<div class="over"></div>
+				<h1>Пейзажи</h1>
+			</div>
+			<!-- /.page-title -->
+
+			<div class="portfolio-grid">
+				<div class="isotope-filter button-group">
+					<ul>
+						<li><a class="button is-checked" data-filter="*">All</a></li>
+						{{#each filters}}
+						<li><a class="button" data-filter=".{{this.key}}">{{this.value}}</a></li>
+						{{/each}}
+					</ul>
+				</div>
+				<ul class="isotope items light-gallery">
+					{{#each items}} {{>item category=this.filters inverse=true img_big=this.img_big lgitem=true data-sub-html=true id=this.id
+					name=this.name price=this.price }} {{/each}}
+				</ul>
+				<!-- /.isotope -->
+			</div>
+			<!-- /.portfolio-grid -->
+
+		</main>
+		<!-- /main -->
+
+		<footer class="inverse-wrapper">
+			<div class="container inner">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="widget">
+							<h4 class="widget-title">Popular Posts</h4>
+							<ul class="post-list">
+								<li>
+									<figure class="overlay">
+										<a href="blog-post.html"><img src="style/images/art/a1.jpg" alt="" /> </a>
+									</figure>
+									<div class="post-content">
+										<p> <a href="blog-post.html">Magna mollis ultricies</a> </p>
+										<div class="meta"><span class="date">3th Oct 2012</span> </div>
+									</div>
+								</li>
+								<li>
+									<figure class="overlay">
+										<a href="blog-post.html"><img src="style/images/art/a2.jpg" alt="" /> </a>
+									</figure>
+									<div class="post-content">
+										<p> <a href="blog-post.html">Ornare nullam risus</a> </p>
+										<div class="meta"><span class="date">28th Sep 2012</span> </div>
+									</div>
+								</li>
+								<li>
+									<figure class="overlay">
+										<a href="blog-post.html"><img src="style/images/art/a3.jpg" alt="" /> </a>
+									</figure>
+									<div class="post-content">
+										<p> <a href="blog-post.html">Euismod nullam</a> </p>
+										<div class="meta"><span class="date">15th Aug 2012</span> </div>
+									</div>
+								</li>
+							</ul>
+							<!-- /.post-list -->
+						</div>
+						<!-- /.widget -->
+					</div>
+					<!-- /column -->
+
+					<div class="col-sm-3">
+						<div class="widget">
+							<h4 class="widget-title">Recent Tags</h4>
+							<ul class="tag-list">
+								<li> <a href="#" class="btn">Blog</a> </li>
+								<li> <a href="#" class="btn">Photography</a> </li>
+								<li> <a href="#" class="btn">Illustation</a> </li>
+								<li> <a href="#" class="btn">Fun</a> </li>
+							</ul>
+						</div>
+						<!-- /.widget -->
+						<div class="widget">
+							<h4 class="widget-title">Top Categories</h4>
+							<ul class="circled">
+								<li> <a href="#">Lifestyle (21)</a> </li>
+								<li> <a href="#">Photography (19)</a> </li>
+								<li> <a href="#">Journal (16)</a> </li>
+								<li> <a href="#">Works (7)</a> </li>
+							</ul>
+						</div>
+						<!-- /.widget -->
+					</div>
+					<!-- /column -->
+
+					<div class="col-sm-3">
+						<div class="widget">
+							<h4 class="widget-title">Get in Touch</h4>
+							<address>
+								<strong>Malory, Inc.</strong><br> Moon Street Light Avenue, 14/05 <br> Jupiter, JP 80630<br>
+								<abbr title="Phone">P:</abbr> (123) 456-7890 <br>
+								<abbr title="Email">E:</abbr> <a href="mailto:#">first.last@example.com</a>
+							</address>
+						</div>
+						<!-- /.widget -->
+						<div class="widget">
+							<h4 class="widget-title">Elsewhere</h4>
+							<ul class="social">
+								<li> <a href="#"><i class="icon-s-rss"></i></a> </li>
+								<li> <a href="#"><i class="icon-s-twitter"></i></a> </li>
+								<li> <a href="#"><i class="icon-s-facebook"></i></a> </li>
+								<li> <a href="#"><i class="icon-s-pinterest"></i></a> </li>
+								<li> <a href="#"><i class="icon-s-linkedin"></i></a> </li>
+								<li> <a href="#"><i class="icon-s-forrst"></i></a> </li>
+							</ul>
+						</div>
+						<!-- /.widget -->
+
+					</div>
+					<!-- /column -->
+
+					<div class="col-sm-3">
+						<div class="widget">
+							<h4 class="widget-title">About Me</h4>
+							<figure> <img src="style/images/art/about.jpg" alt="" /> </figure>
+							<div class="divide10"></div>
+							<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula lacinia. Morbi risus, porta ac leo justo vestibulum.</p>
+						</div>
+						<!-- /.widget -->
+					</div>
+					<!-- /column -->
+
+				</div>
+				<!-- /.row -->
+
+			</div>
+			<!-- .container -->
+
+			<div class="sub-footer">
+				<div class="container inner">
+					<p class="text-center">© 2015 Malory. All rights reserved. Theme by <a href="http://elemisfreebies.com">elemis</a> .</p>
+				</div>
+				<!-- .container -->
+			</div>
+			<!-- .sub-footer -->
+
+		</footer>
+		<!-- /footer -->
+
+	</div>
+	<!-- /.animsition -->
+	{{>footer }}
+
+</body>
+
+</html>

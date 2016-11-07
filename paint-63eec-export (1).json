@@ -1,0 +1,101 @@
+{
+  "structure": {
+    "gallery": [
+      {
+        "name": "Пейзаж",
+        "path": "/category/peizag",
+        "img": "tu4"
+      },
+      {
+        "name": "Портрет",
+        "path": "/category/portret",
+        "img": "w1"
+      },
+      {
+        "name": "Абстракция",
+        "path": "/category/abstract",
+        "img": "tr4"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Главная",
+        "path": "/"
+      },
+      {
+        "name": "Доставка",
+        "path": "/delivery"
+      },
+      {
+        "name": "Контакты",
+        "path": "/contact"
+      }
+    ]
+  },
+  "gallery": {
+    "peizag": [
+      {
+        "id": 1,
+        "img": "w1",
+        "img_big": "w1",
+        "name": "Малинкин",
+        "price": 255,
+        "filters": [
+          {
+            "name": "Категория 1",
+            "hash": "category1"
+          },
+          {
+            "name": "Категория 2",
+            "hash": "category2"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "img": "w7",
+        "img_big": "w7",        
+        "name": "Малинкин2",
+        "price": 250,
+        "filters": [
+          {
+            "name": "Категория 2",
+            "hash": "category2"
+          }
+        ]
+      }
+    ],
+    "portret": [
+      {
+        "id": 3,
+        "img": "u1",
+        "img_big": "u1",        
+        "name": "Олег",
+        "price": 255,
+        "filters": [
+          {
+            "name": "Категория 4",
+            "hash": "category4"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "img": "tu4",
+        "img_big": "tu4",        
+        "name": "Дмитрий",
+        "price": 250,
+        "filters": [
+          {
+            "name": "Категория 1",
+            "hash": "category1"
+          },
+          {
+            "name": "Категория 4",
+            "hash": "category4"
+          }
+        ]
+      }
+    ]
+  }
+}

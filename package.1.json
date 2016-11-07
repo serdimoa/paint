@@ -1,0 +1,24 @@
+{
+  "name": "paint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+
+var obj = {
+  "name":"Олег",
+  "first_name":'пестов',
+  "last_name" : 'игоревич',
+  "date": "01.5.1000"
+}
+
+
+
+console.log(obj["name"])

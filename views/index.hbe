@@ -1,0 +1,14 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/style/index.css">
+</head>
+<body>
+	<div class="container">
+		{{#each bodys}}id{{this.id}} - {{this.name}} цена {{this.price}}<br> {{/each}}
+	
+	
+
+	</div>
+</body>
+
+</html>

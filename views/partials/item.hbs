@@ -1,0 +1,27 @@
+<li class="item 
+{{#if category}} 
+	{{#each category}}
+		{{this.hash}}
+	{{/each}}
+ {{/if}}">
+	<figure class="overlay {{#if inverse}} inverse {{/if}}">
+		<a href="
+		{{#if url}}		
+		{{url}}
+		{{else}}
+		/style/images/art/{{img_big}}.jpg
+		{{/if}}
+		" class="{{#if lgitem}}lgitem{{/if}}" {{#if data-sub-html}} data-sub-html="#caption{{id}}" {{/if}}>
+			<div class="text-overlay caption" {{#if id}} id="caption{{id}}" {{/if}}>
+				<div class="info">
+					<h2 class="post-title">{{name}}</h2>
+					<div class="meta">
+						<span class="count">{{price}}</span>
+						<span class="date">{{id}}</span>
+					</div>
+				</div>
+			</div>
+			<img src="/style/images/art/{{img}}.jpg" alt="" /> </a>
+	</figure>
+</li>
+
